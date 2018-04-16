@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section{Uvod}
+
+U velikoj većini različitih industrija se koriste embeded sistemi kako bi se podigla pouzdanost različitih sistema. Obično su to sistemi koji zahtevaju visoku pouzdanost i bezbednost. Sistemi od kojih mogu zavisiti i ljudski životi. Jedna od takvih industrija je i automobilska industrija. Potreba za korišćenjem softvera u ovoj industriji kao i sama njihova upotreba je značajno porasla u poslednjoj deceniji \cite{knjiga1}\cite{knjiga2}. Većina funkcionalnosti u modernim automobilima, posebno one funkcije koje su vezane za bezbednost, kao što su automatske kočnice ili automatski asistenti pri vožnji \cite{knjiga3}, kontrolišu se pomoću softvera \cite{knjiga4}. Predviđa se da će oko 90\% automobila u budućnosti biti voženo softverski, bez ljudske pomoći \cite{knjiga2}.
+
+
+\section{Softver u automobilskoj industriji}
+Automobilska industrija je tradicionalno pretežno bazirana na konceptima mašinskog inženjerstva \cite{knjiga24}\cite{knjiga25}. Baš kao i neke druge industrije koje su tradicionalno ne-softverske, kao što su avionska, odbrambena ili raketna, i automobilska industrija biva pogodjena softverskom revolucijom. Sve veći broj, kako kritičnih tako i ne kritičnih, funkcionalnosti automobila počinje da bude kontrolisano pomoću softvera. Stoga je razumevanje softvera koji se koriste u automobilskoj industriji sve važnije, i mnogo se više pažnje pridaje nego u pre par decenija. Broj (eng. Broy) u \cite{knjiga25} opisuje softver u ovoj industriji na sledeći način:
+\bigbreak
+\textit{veličina}: Za 40 (od 1976. \cite{knjiga27}) godina broj linija koda u automobilskoj industriji se povećao sa nula na nekoliko miliona.
+\bigbreak
+\textit{uloga}: Funckije u vozilima, kako kritične kao što su kočioni sistem, tako i ne kritične (radio, klima i slično) danas se kontrolišu pomoću softvera. 
+\bigbreak
+\textit{interakcija i rasprostranjenost}: U automobilima postoje ECU sistemi, koji su u suštini mikrokontroleri koji odgovaraju softverskim komponentama \cite{nadji referencu}. ECU sistemi rade zajedno kako bi izvršili potrebnu funkciju automobila. Te funkcije mogu biti veoma raznorodne, kao na primer kontrolisanje motora, vazdušnih jastuka ili prikaz nivoa goriva \cite{knjiga9}. U prošlosti, svaki ECU sistem je izvršavao posebnu funkcionalnost. Zbog toga su softverski mogle da se izvršavaju samo funkcije koje je mogao da izvršava jedan ECU sistem. Ranih devedesetih, ECU sistemi su bili povezani lokalnom mrežom CAN (eng. Control Area Network) pomoću koje su mogli da komuniciraju i dele informacije. Ovo je dovelo do funkcija koje su bile kompleksnije i bilo je potrebno da ih zajedno izvršava više ECU sistema. U kasnim devedesetim, funkcije su bile toliko kompleksne da je bilo potrebno da postoji komunikacija izmedju više CAN mreža. Danas, sem komunikacije medju CAN mrežama unutar samog automobila, vrši se i njihova komunikacija izmedju CAN mreža i spoljasnjeg okruženja pomoću radio veza \cite{knjiga7}.
+\bigbreak
+Do sada navedene karakteristike su samo dokaz da je upotreba softvera jako velika u automobilskoj industriji danas. Takodje, pokazuje da je softver neizostavni deo današnjih automobila. Bojl dalje u \cite{knjiga27} opisuje karakteristike softvera u automobilskoj industriji. Naredne stavke govore o kompleksnosti samog softvera.
+\bigbreak
+\textit{heterogenost podsistema}: Pri izradi softvera za automobil koristi se modularnost, kao i uopste pri proizvodnji automobila. Tako se rade softveri za kontrolisanje različitih sistema, kočnica, menjača, motora, a zatim se oni pojedinačno testiraju. Nakon uspešnog testiranja, sistemi se objedinjavaju u jedna jedinstven sistem vozila. 
+\bigbreak
+\textit{proivođači originalne opreme} (eng. Original Equipment Manufacturer (OEM)): Proces integracije heterogenih sistema je sam po sebi zahtvean, međutim ovaj zadatak je daleko kompleksniji. To je tako zbog činjenice da veliki broj sistema za vozila dolazi od različitih proizvođača. Kasnije je zadatak automobilskih kompanija da ove sisteme i softvere dobijene od različitih proizvođača objedine i integrišu.
+\bigbreak
+\textit{visoko konfigurabilni softver}: Softveri u automobilskoj industriji su visoko konfigurabilni, s obzirom na to da postoji veliki broj različitih funkcija koje automobil obavlja. S toga, veliki broj različitih varijanti vozila može biti proizveden od modularnih delova. Na primer, autori \cite{knjiga27} navode primer vozila sa 80 različitih softverskih jedinica, gde jednostavan izbor da li se funkcionalnost svakog od njih uključuje ili ne vodi do (2 na 80) mogućnosti. Iz ovoga se zaključuje da je moguće napraviti više varijanti vozila koji se razlikuju po funkcionalnostima koje su uključene i dobijene su kombinovanjem različitih softverskih jedinica.
+\bigbreak
+\section{Značaj verifikacije u automobilskoj industriji}
+
+Verifikiacija softvera, i testiranje kao jedna od oblasti verifikacije je doživela ekspanziju poslednjih godina, posebno u osetljivim oblastima, kao što su avionska, raketna, automobilska i slične. Ipak, što se same automobilske industrije tiče, ne postoji previše studija koje se fokusiraju na testiranje i verifikaciju na višim nivoima, pri integraciji pojedinačnih komponenti. Međutim, postoji potreba za fokusom i akademskih i industrijskih istraživača u ovoj oblasti.
+\bigbreak
+S obzirom na sve veći broj funkcionalnosti koje pružaju današnji automobili, softveri bivaju sve kompleksniji. Jedan od glavnih zadataka u automobilskoj industriji je dizajnirati efektivne i efikasne procese izrade i testiranja softvera \cite{knjiga10}. S obzirom na sve kompleksnije i veće softvere sa sve većim brojem mogućnosti i funkcionalnosti, njihova verifikacija i testiranje postaje dosta kompleksan zadatak \cite{knjiga11}. Neotkrivene greške u softveru u ovoj industriji mogu imati jako ozbiljne posledice. Može doći do saobraćajnih nesreća, povreda, pa čak i do gubitka ljudskih života. Zbog ovoga je izuzetno važno izvršiti detaljno testiranje svih delova softvera. Samo jedna greška može dovesti do katastrofalnih posledica \cite{knjiga12}. Upravo iz ovog razloga, oko 50\% od ukupnog vemena koje se utroši na tehničke aktivnosti (vezane za izradu softverskog dela) u razvoju vozila se potroši na testiranje samog softvera \cite{knjiga13}.
+
+
+\bigbreak
+Neki od primera kada su greške u softveru mogle da dovedu do katastrofalnih posledica:
+\bigbreak
+Proizvodjač automobila Tojota (eng. Toyota) je 2009. i 2010. godine imao prijave vozila koja su ubrzavala sama od sebe bez ikakvog razloga. Ispostavilo se da je problem bio u softveru koji je kontrolisao ubrzavanje vozila. Isti proizvođač je imao jos prijava Nakon prijave jos jednog problema na nekoliko vozila kompanija je odlučila da napravi novi hibridni softver. Drugi problem je bio vezan za kočioni sistem, što je moglo rezultovati čak i ljudskim žrtvama. 
+\bigbreak
+14. februara 2016. godine, Guglov (eng. Google) samovozeći automobil (self-driving car). Kompanija je priznala da je problem bio greška softvera u predviđanju kretnje autobusa, kao i u odluci šta sam automobil treba da uradi, odnosno kuda da ide. Nakon otvranja zelenog svetla za automobil, on je uspešno detektovao autobus, međutim pretpostavka koju je napravio je da će autobus usporiti tako da je krenuo dalje. Nesreća nije bila velikih razmera.
+
+\section{Izazovi u verifikaciji softvera u automobilskoj industriji}
+
+U ovom delu dajemo kratak pregled izazova koji se mogu sresti u verifikaciji softvera u automobilskoj industriji \cite{knjiga1}\cite{knjiga2}\cite{knjiga3}.
+\bigbreak
+\textit{merenje napora}: Poteskoće u određivanju važnosti testiranja na različitim nivoima \cite{knjiga2}.
+\bigbreak
+\textit{znanje osoblja}: Različita mišljenja različito stručnih ljudi \cite{knjiga2}.
+\bigbreak
+\textit{distribuirane funkcionalnosti}: Visoka kompleksnost testova usled distribuiranosti softvera \cite{knjiga2}.
+\bigbreak
+\textit{metrika pokrivenosti}: Nedostatak podrške za merenje testova \cite{knjiga2}. 
+\bigbreak
+\textit{različite varijante}: Kombinatorna eksplozija testiranja zbog visokog stepena prilagođavanja \cite{knjiga2}.
+\bigbreak
+\textit{zahtevi i mogućnost praćenja}: Problemi vezani za zahteve kao što su nedostatak jasnih zahteva za testove visokog nivoa i nedostatak praćenja napretka kao prepreka za verifikaciju \cite{knjiga1}.
+\bigbreak
+\textit{proces testiranja}: Odsustvo jedinstvenog procesa testiranja \cite{knjiga1}.
+\bigbreak
+\textit{alati za verifikaciju}: Nedostatak adekvatnih alata i tehnika za verifikaciju \cite{knjiga1}.
+\bigbreak
+\textit{testiranje i praćenje nedostataka}: Visoka cena popravljanja nedostataka kao i neotkrivenih nedostataka \cite{knjiga1}.
+\bigbreak
+\textit{dokumentacija}: Nedostatak odgovarajuće i ažurne dokumentacije \cite{knjiga1}.
+\bigbreak
+\textit{dokumentacija}: Preklapanje testova na različitim nivoima testiranja dovodi do gubitka vremena i resursa \cite{knjiga3}.
+
+\end{document} 
