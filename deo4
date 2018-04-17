@@ -1,0 +1,190 @@
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper]{article}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[T2A]{fontenc} % enable Cyrillic fonts
+\usepackage[utf8]{inputenc} % make weird characters work
+\usepackage{graphicx}
+
+\usepackage[english,serbian]{babel}
+%\usepackage[english,serbianc]{babel} %ukljuciti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi cirilica
+
+\usepackage[unicode]{hyperref}
+\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
+
+%\newtheorem{primer}{Пример}[section] %ćirilični primer
+\newtheorem{primer}{Primer}[section]
+
+\begin{document}
+
+\title{Propisi i standardi verifikacije softvera u automobilskoj industriji\\ \small{Seminarski rad u okviru kursa\\Metodologija stručnog i naučnog rada\\ Matematički fakultet}}
+
+\author{Andrea Pilipović\\ andrea.pilipovic@yahoo.com}
+\date{14.~april 2018.}
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Uvod}
+\label{sec:uvod}
+
+Uz sve novouvedene termine u zagradi naglasiti od koje engleske reči termin potiče. Naredni primeri ilustruju način uvođenja enlegskih termina kao i citiranje.
+
+\section{Standardi u automobilskoj industriji}
+\label{sec:naslov1}
+
+Uvođenjem novih tehnoloških inovacija u takozvane "pametne automobile", koje su namenjene podršci i savetovanju vozača, imaju za cilj da olakšaju i obezbede veću sigurnost i udobnost u vožnji \cite{ref36}.
+Istovremeno, ovakve inovacije nose sa sobom i mogućnost rizika od pogrešnog rada, zbog kontrolisanja i interakcije ugrađenih softvera sa važnim sistemima kao što su kočnice i upravljački sistem. Kompanija Fiat Chrysler u maju 2017. godine imala je grešku u softveru koja je dovela do tragičnih saobraćajnih nesreća. Greška je prouzrokovala to da bočni vazdušni jastuci kao i pojas u slučaju naglog kočenja ne rade. Sličan problem je imala i kompanija General Motors koja je grešku otkrila tek nakon saobraćajne nesreće koja je ubila jednog i ranila tri čoveka. \\
+
+Standardi funkcionalne bezbednosti (eng. Functional Safety Standard) postoje kako bi se izbegle nesreće ovog tipa. Pridržavanjem ovih standarda održava se siguran i pravilan rad vozila, a fokus je prvenstveno na rizicima koji poizilaze iz slučajnih hardverskih kvarova, sistemskih grešaka u dizajnu sistema, hardveru ili razvoju softvera, proizvodnji, pa sve do funkcionalne aplikacije. Dva standarda imaju važnu ulogu u razvoju softvera automobilske industrije, MISRA i ISO 26262, zajedno sa još jednim koji ih polako ali sigurno prati: AUTOSAR. Iako većina programera u automobilskoj industriji prepoznaje ova imena, nevoljno se pridržavaju ovih standarda nadajući se da će neko drugi brinuti o njima. Kako su ovi standardi obavezni kod većine automobilskih dobavljača, bitno je razumeti namenu koja stoji iza njih i to kako se analiza statičkog koda uklapa u testiranje krajnjeg proizvoda zarad ispunjavanja ovih standarda.
+
+\subsection{ISO 26262 standard}
+\label{subsec:podnaslov1}
+
+ISO (eng. International Organization for Standardization) je najveća svetska organizacija koja se bavi razvojem i izdavanjem internacionalnih standarda. ISO 26262 standard, poznat i pod nazivom "Drumska vozila - Funkcionalna bezbednost" (eng. Road vehicles - Functional safety) je rezultat potrebe za automobilsko specifičnim internacionalnim standardom koji bi se fokusirao na bezbednosno kritične komponente automobila. On je nastao kao adaptacija šire primenjivanog IEC 61508 standarda Međunarodne Elektrotehničke Komisije (eng. International Electrotechnical Commission - IEC), generičko funkcionalno bezbednosni standard za električne i elektronske sisteme, koji postavlja uslove za osiguravanje da su sistemi dizajnirani, implementirani, funkcionalni i napravljeni tako da obezbeđuju potreban nivo sigurnosti integriteta (SIL, eng. Safety integrity level). \\
+
+Ovaj standard ima za cilj da smanji rizik na prihvatljiv nivo, pokrivajući sigurnost sistema u kompletnom životnom veku. Počiva na konceptu rizika, verovatnoći opasnih događaja i ozbiljnosti njihovih posledica kao i sigurnosnim funkcijama koje takav rizik smanjuju. Tri stava na kojima se zasniva standard IEC 61508 su: nulti rizik nikada ne može biti postignut, sigurnost se mora uzimati u obzir od samog početka i netolerisani rizici moraju biti reducirani \cite{ref36}. ISO 26262 je standard funkcionalne bezbednosti koji se primenjuje na proizvodnju jednog ili više automobilskih električnih i elektronskih sistema koji se ugrađuju u putnička vozila do 3500 kilograma.
+Primeri ovakvih sistema uključuju elektronske parkirne kočnice, napredni sistemi za pomoć vozačima (ADAS, eng. advanced driver assistance system), elektronski program stabilnosti, motorne kontrolne jedinice, prilagodiva kontrola brzine, itd. \\
+
+Serija standard ISO 26262 sadrži 10 delova, 43 poglavlja, 180 inženjerskih metoda, 600 zahteva koji su sadržani u 450 stranica sa oko 750 rečenica \cite{ref36}. Na slici \ref{fig:primenastandarda} prikazana je struktura serije standarda ISO 26262 sa područjem primene svih delova od 1-10. \\
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.75]{primenastandarda.jpg}
+\end{center}
+\caption{Struktura serije standarda ISO 26262 sa područjem primene njegovih delova}
+\label{fig:primenastandarda}
+\end{figure}
+
+Kratak opis delova standarda \cite{ref37}:
+\begin{itemize}
+  \item ISO 26262-1 predstavljen na samom vrhu šematskog prikaza specificira pojmove, definicije i skraćenice za aplikaciju koje se koriste u svim ostalim delovima standarda
+  \item ISO 26262-2 specificira zahteve za upravljanje funkcionalnom sigurnošću za automobilske aplikacije, uključujući zahteve nezavisne od projekta a koji se tiču organizacija uključene u projekat (sveobuhvatno upravljanje sigurnošću) i zahteve zavisne od projekta a koji se tiču aktivnosti upravljanja u sigurnosnom ciklusu (upravljanje tokom koncept faze i razvoja proizvoda, i nakon puštanja u rad za proizvodnju)
+  \item ISO 26262-3 specificira zahteve za koncept fazu automobilskih aplikacija, uključujući: definiciju stavki (eng. item), iniciranje sigurnosnog ciklusa, analize opasnosti i procene rizika i koncept funkcionalne sigurnosti
+  \item ISO 26262-4 specificira zahteve za razvoj proizvoda na sistemskom nivou, uključujući: uslovi za pokretanje razvoja proizvoda, specifikacija tehničkih sigurnosnih zahteva, tehnički koncept sigurnosti, dizajn sistema, integracija stavki i testiranje, sigurnosna provera, procena funkcionalne sigurnosti i puštanje proizvoda u rad
+ \item ISO 26262-5 specificira zahteve za razvoj proizvoda na hardverskom nivou, uključujući: uslovi za pokretanje razvoja proizvoda na hardverskom nivou, specifikacija hardverskih sigurnosnih zahteva, dizajn hardvera, podaci hardverskog nivoa i procena kršenja bezbednosne granice usled slučajnih grešaka hardvera, njegova integracija i testiranje
+ \item ISO 26262-6 specificira zahteve za razvoj proizvoda na softverskom nivou, uključujući: uslovi za pokretanje razvoja proizvoda na softverskom nivou, specifikacija softverskih sigurnosnih zahteva, dizajn softverske arhitekture, dizajn softverskih jedinica i njihovih implentacija, testiranje softverskih jedinica, softverska integracija i testiranje i provera softverskih sigurnosnih zahteva
+ \item ISO 26262-7 specificira zahteve za proizvodnju, rad, usluge i razgradnju
+ \item ISO 26262-8 specificira zahteve za prateće procese
+ \item ISO 26262-9 specificira zahteve za ASIL (eng. Automotive Safety Integrity Level) orjentisanu i sigurnosno orjentisanu analizu
+ \item ISO 26262-10 predstavlja sveobuhvatni prikaz ISO 26262 standarda, pruža dodatna obrazloženja u cilju razumevanja drugih delova ISO 26262
+\end{itemize}
+
+\begin{thebibliography}{9}
+\bibitem{ref1} 
+F. Saglietti, “Testing for dependable embedded software,” in 36th EUROMICRO Conference on Software Engineering and Advanced Applications (SEAA). IEEE, 2010, pp. 409–416.
+ 
+\bibitem{ref2} 
+K. Grimm, “Software technology in an automotive company: major challenges,” in Proceedings of the 25th International Conference on Software Engineering. IEEE Computer Society, 2003, pp. 498–503.
+ 
+\bibitem{ref3} 
+Umar Zakir Abdul, Hamid; et al. (2017). "Autonomous Emergency Braking System with Potential Field Risk Assessment for Frontal Collision Mitigation". 2017 IEEE Conference on Systems, Process and Control (ICSPC). Retrieved 14 March 2018.
+
+\bibitem{ref4}
+B. Katumba and E. Knauss, “Agile development in automotive software development: Challenges and opportunities,” in Product-Focused Software Process Improvement. Springer, 2014, pp. 33–47. 
+
+\bibitem{ref5}
+F. Fabbrini, M. Fusani, G. Lami, and E. Sivera, “Software engineering in the European automotive industry: Achievements and challenges,” in 32nd Annual IEEE Computer Society International Conference on Computers, Software and Applications(COMPSAC), 2008, pp. 1039–1044.
+
+\bibitem{ref6}
+M. Broy, “Automotive software and systems engineering,” in Proceedings of the 3rd ACM and IEEE International Conference on Formal Methods and Models for Co-Design(MEMOCODE), 2005, pp. 143–149. 
+
+\bibitem{ref7}
+M. Broy, I. H. Kruger, A. Pretschner, and C. Salzmann, “Engineering automotive software,” Proceedings of IEEE, vol. 95, no. 2, pp. 356–373, 2007. 
+
+\bibitem{ref8}
+J. S. Her, S. W. Choi, J. S. Bae, S. D. Kim, and D. W. Cheun, “A component-based process for developing automotive ecu software,” in Product-Focused Software Process Improvement. Springer, 2007, pp. 358– 373.
+
+\bibitem{ref9}
+F. Franco, M. Mauro, S. Stevan, A. B. Lugli, and W. Torres, “Modelbased functional safety for the embedded software of automobile power window system,” in 11th IEEE/IAS International Conference on Industry Applications (INDUSCON), 2014, pp. 1–8. 
+
+\bibitem{ref10}
+M. Conrad, “Veriﬁcation and validation according to ISO 26262: A workﬂow to facilitate the development of high-integrity software,” Proceedings to 6th European Congress on Embedded Real Time Software and Systems (ERTS2), 2012. 
+
+\bibitem{ref11}
+S. S. Barhate, “Eﬀective test strategy for testing automotive software,” in International Conference on Industrial Instrumentation and Control (ICIC). IEEE, 2015, pp. 645–649. 
+
+\bibitem{ref12}
+R. Awédikian and B. Yannou, “A practical model-based statistical approach forgeneratingfunctionaltestcases: applicationintheautomotiveindustry,” Software Testing, Veriﬁcation and Reliability, vol. 24, no. 2, pp. 85–123, 2014.
+
+\bibitem{ref13}
+A. Kasoju, K. Petersen, and M. V. Mäntylä, “Analyzing an automotive testing process with evidence-based software engineering,” Information and Software Technology, vol. 55, no. 7, pp. 1237–1259, 2013. 
+
+\bibitem{ref14}
+D. Sundmark, K. Petersen, and S. Larsson, “An exploratory case study of testing in an automotive electrical system release process,” in 6th IEEE International Symposium on Industrial Embedded Systems (SIES). IEEE, 2011, pp. 166–175. 
+
+\bibitem{ref15}
+A. M. Pérez and S. Kaiser, “Top-down reuse for multi-level testing,” in 17th IEEEInternationalConferenceandWorkshopsonEngineeringofComputer Based Systems (ECBS), 2010, pp. 150–159. 
+
+\bibitem{ref16}
+J. Kasurinen, 0. Taipale, and K. Smolander. Software Test Automation in Practice: Empirical Observations. Advances in Software Engineering, 2010: 5 71-5 79, 2010. 
+
+\bibitem{ref17}
+S. Lity, R. Lachmann, M. Locbau, and I. Schaefer. Delta-oriented 80me Pro: Line Test Models ~ The Body Comfort System Case Study. Technical report, TUBraunschweig, 2013.
+
+\bibitem{ref18}
+M. Lochau, S. Lity, R Lachmann, I. Schaefer, and U. Goltz. Delta-oriented model based integration testing of large-scale systems. The Journal of Systems and Software, 91: 63-84, 2014.
+
+\bibitem{ref19}
+L. Zhang, D. Han, L. Zhung, G. Rothermel, and H. Mei. Bridging the Gap between the 1 Total and Additional Test-Case Prioritization Strategies. In International Conferenceon Software Engineering, 1091? 2013, 2013
+
+\bibitem{ref20}
+R. Lachmann and I. Schaefer. Herausforderungen beim testen von Fahrerassistenzsys temen. In 1st Workshop Automotive Software Engineering (ASE), 2013
+
+\bibitem{ref21}
+G. Rothermel, R. H. Untch, C. Chu, and M. J. Harrold. Prioritizing Test Cases For Regression Testing. IEEE Transactions on software engineering, Vol.27 No.10:929-948,2001.
+
+\bibitem{ref22}
+C. Kaner. What is a good test case? In Software Ibsting Anabrsis & Review Conference '(STAR) East, 2003.
+
+\bibitem{ref23}
+M. Utting and B. Legcard. Practical Model ~ based Testing. Morgan Kaufmann, 2007.
+
+\bibitem{ref24}
+M. A. Sindbu and 1c. Meinkc. ms: An lncnemntal Lemming Algorithm for Finite Automata. CoRR, abs / 12062691, 2012.
+
+\bibitem{ref25}
+H. Raifelt, B. Stetfen, and T. Margaria. Dynamic Testing via Automate Learning Ew Proceedings of the 3rd International Haifa Verification Conference on Hardware and Sewage Verification and Nesting, HVC 07, pages 136-152. Springer-Veriag, 2008.o Rothermel, R. H Untch c. Chu, null M. J. Hanold. Prioritizing Test Cases For. Regression Testing. IEEE Transactions on Software Engineering, W127 No. 10: 929-1 948, 2001.
+
+\bibitem{ref26}
+L.C. Briand. New Applications of Machine Learning and Software Testing. In Quality Software, 2008 QSIC '08. The Eighth International Conference on, pages 33-10, Aug 2008.
+
+\bibitem{ref27}
+A R. Lenz, A. P020, and S. R. Vergilio. Linking software testing results with a machine learning approach. Engineering Applications of Artificial Intelligence, 266-6): 1631-1640, 2013.
+
+\bibitem{ref28}
+F. A. Barros, L. Neves, E. Hori, and D. Torres. The mCNL: A Controlled Natural Language for Use Case Specifications. In SEKE, pages 250-25 3. Knowledge Systems 1 Institute Graduate School, 201 l. 'L
+
+\bibitem{ref29}
+J. Ferret, P. M. Kruse, F. Chicano, and E. Alba. Evolutionary Algorithm for Prioritized Pairwise "Ibst Data Generation. In Proceedings of the 14th Annual Conference on Genetic and Evolutionary Computation, GECCO '12, pages 1213-1220. ACM, 2012.
+
+\bibitem{ref30}
+Strobbe with Herramhof, E. Vlachogiannis, and C A Velasoo Test Case Description Language (TCDL): Test Case Metadata for Conformance Evaluation. In ICCHP, pages "(164-171), 2006
+
+\bibitem{ref31}
+E. Engstrtim and P. Runeson. Software product line testing A systematic mapping study. Information and Software Technology, 53: 2-13, 201.
+
+\bibitem{ref32}
+A. Onyx-cw and R. ReiBig. Optimierte Variantenund Anfordertmgsabdeckung im Test. In Automotive Software Engineering Hbrkshop. 43. G] Jahmstagung, 2013
+
+\bibitem{ref33}
+MF Johansen, (3. Haugen, and F. Fleurey. An algorithm for generating t-wise covering arrays from large feature models. In SPLC, pages 46-55, 2012.
+
+\bibitem{ref34}
+L. Briand, Y. Labiche, and Z. Bawar. Using the Machine [taming to Retine Blog-Box] Test Specifications and Test Suites. In Quality Software, 2008. QSIC 08. The Eighth International Conference, pages 135-144, Aug 2008. 
+
+\bibitem{ref35}
+B. Engstrom, P. Runeson, and M. Skoglund. A systematic review on regression test selection techniques. Information and Software Technology, 52: 14-30, 2010.
+
+\bibitem{ref36}
+Sabira S. Salihović, Suada F. Dacić, Azra A. Ferizović, Funkcionalna sigurnost cestovnih vozila prema seriji standarda ISO 26262, 2015.
+
+\bibitem{ref37}
+International Organization for Standardization (ISO), ISO 26262-Part 1 - Part 9: Road vehicles - Functional safety, 2011.
+
+\end{thebibliography}
+\end{document}
