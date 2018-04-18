@@ -44,7 +44,7 @@ Automobilska industrija je tradicionalno pretežno bazirana na konceptima mašin
 \bigbreak
 \textit{uloga}: Funckije u vozilima, kako kritične kao što su kočioni sistem, tako i ne kritične (radio, klima i slično) danas se kontrolišu pomoću softvera. 
 \bigbreak
-\textit{interakcija i rasprostranjenost}: U automobilima postoje ECU sistemi, koji su u suštini mikrokontroleri koji odgovaraju softverskim komponentama \cite{nadji referencu}. ECU sistemi rade zajedno kako bi izvršili potrebnu funkciju automobila. Te funkcije mogu biti veoma raznorodne, kao na primer kontrolisanje motora, vazdušnih jastuka ili prikaz nivoa goriva \cite{ref8}. U prošlosti, svaki ECU sistem je izvršavao posebnu funkcionalnost. Zbog toga su softverski mogle da se izvršavaju samo funkcije koje je mogao da izvršava jedan ECU sistem. Ranih devedesetih, ECU sistemi su bili povezani lokalnom mrežom CAN (eng. Control Area Network) pomoću koje su mogli da komuniciraju i dele informacije. Ovo je dovelo do funkcija koje su bile kompleksnije i bilo je potrebno da ih zajedno izvršava više ECU sistema. U kasnim devedesetim, funkcije su bile toliko kompleksne da je bilo potrebno da postoji komunikacija izmedju više CAN mreža. Danas, sem komunikacije medju CAN mrežama unutar samog automobila, vrši se i njihova komunikacija sa spoljašnjim okruženjem pomoću radio veza \cite{ref2}.
+\textit{interakcija i rasprostranjenost}: U automobilima postoje ECU sistemi, koji su u suštini mikrokontroleri koji odgovaraju softverskim komponentama \cite{ref38}. ECU sistemi rade zajedno kako bi izvršili potrebnu funkciju automobila. Te funkcije mogu biti veoma raznorodne, kao na primer kontrolisanje motora, vazdušnih jastuka ili prikaz nivoa goriva \cite{ref8}. U prošlosti, svaki ECU sistem je izvršavao posebnu funkcionalnost. Zbog toga su softverski mogle da se izvršavaju samo funkcije koje je mogao da izvršava jedan ECU sistem. Ranih devedesetih, ECU sistemi su bili povezani lokalnom mrežom CAN (eng. Control Area Network) pomoću koje su mogli da komuniciraju i dele informacije. Ovo je dovelo do funkcija koje su bile kompleksnije i bilo je potrebno da ih zajedno izvršava više ECU sistema. U kasnim devedesetim, funkcije su bile toliko kompleksne da je bilo potrebno da postoji komunikacija izmedju više CAN mreža. Danas, sem komunikacije medju CAN mrežama unutar samog automobila, vrši se i njihova komunikacija sa spoljašnjim okruženjem pomoću radio veza \cite{ref2}.
 \bigbreak
 Do sada navedene karakteristike su samo dokaz da je upotreba softvera jako velika u automobilskoj industriji danas. Takođe, pokazuje da je softver neizostavni deo današnjih automobila. Bojl dalje u \cite{ref7} opisuje karakteristike softvera u automobilskoj industriji. Naredne stavke govore o kompleksnosti samog softvera.
 \bigbreak
@@ -426,5 +426,9 @@ Sabira S. Salihović, Suada F. Dacić, Azra A. Ferizović, Funkcionalna sigurnos
 
 \bibitem{ref37}
 International Organization for Standardization (ISO), ISO 26262-Part 1 - Part 9: Road vehicles - Functional safety, 2011.
+
+\bibitem{ref38}
+Distributed Development of Automotive Real-time Systems based on Function-triggered Timing Constraints, Oliver Scheickl, Christoph Ainhauser, Michael Rudorfer BMW Car IT, Munich, Germany  
+
 \end{thebibliography}
 \end{document} 
