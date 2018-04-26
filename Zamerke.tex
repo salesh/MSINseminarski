@@ -1,0 +1,783 @@
+
+
+ % !TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper]{report}
+
+\usepackage[T2A]{fontenc} % enable Cyrillic fonts
+\usepackage[utf8x,utf8]{inputenc} % make weird characters work
+\usepackage[serbian]{babel}
+%\usepackage[english,serbianc]{babel}
+\usepackage{amssymb}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[unicode]{hyperref}
+\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
+
+\newcommand{\odgovor}[1]{\textcolor{blue}{#1}}
+
+\begin{document}
+
+\title{Dopunite naslov svoga rada\\ \small{Dopunite autore rada}}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Uputstva}
+\emph{Prilikom predavanja odgovora na recenziju, obrišite ovo poglavlje.}
+
+Neophodno je odgovoriti na sve zamerke koje su navedene u okviru recenzija. Svaki odgovor pišete u okviru okruženja \verb"\odgovor", \odgovor{kako bi vaši odgovori bili lakše uočljivi.} 
+\begin{enumerate}
+
+\item Odgovor treba da sadrži na koji način ste izmenili rad da bi adresirali problem koji je recenzent naveo. Na primer, to može biti neka dodata rečenica ili dodat pasus. Ukoliko je u pitanju kraći tekst onda ga možete navesti direktno u ovom dokumentu, ukoliko je u pitanju duži tekst, onda navedete samo na kojoj strani i gde tačno se taj novi tekst nalazi. Ukoliko je izmenjeno ime nekog poglavlja, navedite na koji način je izmenjeno, i slično, u zavisnosti od izmena koje ste napravili. 
+
+\item Ukoliko ništa niste izmenili povodom neke zamerke, detaljno obrazložite zašto zahtev recenzenta nije uvažen.
+
+\item Ukoliko ste napravili i neke izmene koje recenzenti nisu tražili, njih navedite u poslednjem poglavlju tj u poglavlju Dodatne izmene.
+\end{enumerate}
+
+Za svakog recenzenta dodajte ocenu od 1 do 5 koja označava koliko vam je recenzija bila korisna, odnosno koliko vam je pomogla da unapredite rad. Ocena 1 označava da vam recenzija nije bila korisna, ocena 5 označava da vam je recenzija bila veoma korisna. 
+
+NAPOMENA: Recenzije ce biti ocenjene nezavisno od vaših ocena. Na osnovu recenzije ja znam da li je ona korisna ili ne, pa na taj način vama idu negativni poeni ukoliko kažete da je korisno nešto što nije korisno. Vašim kolegama šteti da kažete da im je recenzija korisna jer će misliti da su je dobro uradili, iako to zapravo nisu. Isto važi i na drugu stranu, tj nemojte reći da nije korisno ono što jeste korisno. Prema tome, trudite se da budete objektivni. 
+\chapter{Recenzent \odgovor{--- ocena:} }
+
+
+\section{O čemu rad govori?}
+% Напишете један кратак пасус у којим ћете својим речима препричати суштину рада (и тиме показати да сте рад пажљиво прочитали и разумели). Обим од 200 до 400 карактера.
+
+Rad pruža uvid u proces testiranja softvera u automobilskoj industriji. U prvih 4 poglavlja se objašnjavaju značaj i izazovi softvera u tom domenu. Centralna tema ovog rada je kreiranje značajnih test primera. Završni deo rada posvećen je kratkom pregledu standarda specifičnog za automobilsku industriju, a namenjenog povećanju bezbednosti softvera.
+
+\section{Krupne primedbe i sugestije}
+% Напишете своја запажања и конструктивне идеје шта у раду недостаје и шта би требало да се промени-измени-дода-одузме да би рад био квалитетнији.
+
+\begin{itemize}
+\item strana 5: Izazovi u verifikaciji softvera u automobilskoj industriji:
+  \begin{itemize}
+  \item Stavke su navedene iz različitih izvora, a na osnovu pruženog u radu, čitaoc može da zaključi da postoje preklapanja. Razlika između pojedinih parova stavki nije jasna. Problematične stavke su {\em{mogućnost praćenja, proces testiranja, testiranje i praćenje nedostataka}}.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item strana 6: Efikasno testiranje u automobilskoj industriji:
+  \begin{itemize}
+\item {\em{Stoga kvalitet softvera je vrlo bitna stavka kod automobilskih softverskih sistema. Testiranje softvera je jedna od najbitnijih stavki prilikom razvoja softvera za automobile.}} Navedene dve rečenice predstavljaju ponavljanje.
+  \end{itemize}
+\item {\em{ Bilo kakve greške na softveru koje se
+ne otkriju prilikom testiranja, mogu da izazovu ogromne finansijske probleme i čak da rizikuju ljudske živote.}} Ova rečenica je generalizacija koja nije potkrepljena nikakvim podatkom.
+\item {\em{Nije naveden nijedan izvor za ceo drugi pasus, iako sadrži tvrdnje}}.
+  \item {\em{Ovo otežava pravljenje pretpostavki u vezi progresa testiranja i pokrivenosti sistema na kome se testira i automatizacije izbora test slučaja i njihovog izvršavanja.}} Teško se prati tok rečenice.
+\end{itemize}
+
+\begin{itemize}
+\item strana 7: Analiza i Dizajn:
+  \begin{itemize}
+  \item {\em{U ovoj fazi glavni zadatak je kreiranje slučajeva za testiranje, kako to predstavlja odnos samog procesa testiranja.}}. Rečenica je nejasna i nije u duhu srpskog jezika. Takva konstrukcija ima smisla na engleskom jeziku, pa to ostavlja sumnju da je preuzeta odnekle, ali izvor nije naveden. Ista greška se ponavlja i u nastavku pasusa.
+  \end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item strana 7: Poglavlje 6.1:
+  \begin{itemize}
+  \item Kroz celo ovo poglavlje postoje greške. Kada bih hteo da ukazujem na svaku pojedinačno, morao bih izdvojiti sve pasuse iz ovog poglavlja i podvlačiti greške kojih ima na više nivoa. Od toga da se koriste reči poput {\em{``neretko, uobičajeno, obično, postoje mnogi''}}, da ima štamparskih i gramatičkih greški, kao i u potpunosti nejasnih rečenica. Dodatno, ima i cikličnih rečenica koje ništa ne govore, a nijedan izvor nije naveden.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item strana 8: Uklanjanje redudansi:
+  \begin{itemize}
+  \item Nijedan izvor nije naveden, a tvrđenja su prisutna. Korišćenje kolokvijalnih termina poput {\em{hiljadu}} -- u značenju {\em{mnogo}}.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item strana 9: Implementacija i egzekucija:
+  \begin{itemize}
+  \item {\em{Takvo testiranje metodom crne kutije omogućava vrlo
+      ograničene informacije, poput pokrivenosti koda, {\underline{za razliku od tehnika metode bele kutije}}.}} Podvučenim delom rečenice se nije napravio doprinos radu, a ceo kraj pasusa navedene rečenice nema izvora.
+  \end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item strana 9: Poglavlje 7.1:
+  \begin{itemize}
+  \item Sem dela prvog, nijedan drugi pasus ovog poglavlja nema nijednu referencu. Ovde se koristi drugo lice množine u obraćanju, što nije u saglasnosti sa prethodnim delovima rada. Takođe, tekst je prelomljen slikom. Izdvajanje poslednjeg pasusa kao zasebnog, iako kao logička celina pripada prethodnom. Druge greške ovog poglavlja neće biti komentarisane.
+  \end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item strana 11: Poglavlje 7.2:
+  \begin{itemize}
+  \item Slično kao i za 6.1, samo u malo blažoj formi. Ponegde se mogu naći reference, ali stilski i semantički je loše poglavlje.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item strana 12: Poglavlje 8:
+  \begin{itemize}
+  \item Nema nijedne reference sem pored imena autora jednog od izvora navedenog u korišćenoj literaturi. Nekonzistentnost pri korišćenju termina ``regresijskom''.
+  \end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item strana 12, 13: Poglavlje 8.1:
+  \begin{itemize}
+  \item Slično kao i 7.2. Tvrđenja bez referenci, korišćenje skraćenica koje nisu uvedene, nekonzistentno korišćenje pojmova, gramatičke i stilske greške.
+  \end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item strana 13: Poglavlje 8.2:
+  \begin{itemize}
+    \item Ne postoji nijedna referenca.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item strana 14: Poglavlje 9:
+  \begin{itemize}
+  \item Jedna rečenica jedan pasus. Korišćenje imena autora i akronima koji prethodno nisu objašnjeni. Neformalne termini poput ``zgodni''. Kovanica ``alatiranje'', ``intuitiranje''. Neobjašnjeni pojmovi poput {\em{granularnost tehnike}}. Doslovno prevedeno {\em{T-wise}} sa engleskog. ``MachrnE'' je takođe nepoznata reč.
+  \item Deo recenice iz apstrakta [34] glasi:
+    {\em{``to help people understand the limitations of test suites   and their possible redundancies''}}.
+
+    Postoji ocigledna sličnost sa rečenicom {\em{``Pristup pomaže razumevanju granica testnih slučajeva i pronalaženju viškova.''}}, ali izvor nije naveden.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item strana 15: poglavlje 10, 10.1:
+  \begin{itemize}
+  \item Izostavljeno navođenja izvora informacije o nesreći, kao i o drugim tvrdnjama. Korišćenje kolokvijalizama ``polako ali sigurno prati''. Pozivanje na predrasude: {\em{``Iako većina programera u automobilskoj industriji prepoznaje ova imena, nevoljno se pridržavaju ovih standarda nadajući se da će neko drugi brinuti o njima.''}}.
+  \end{itemize}
+\end{itemize}
+
+
+
+\begin{itemize}
+\item strana 17: Zaključak i budući radovi:
+  \begin{itemize}
+  \item Uvođenje novih pojmova poput {\em{``GEM-dobavljača''}}. Poslednje dve rečenice su napravilne na više nivoa.
+  \end{itemize}
+\end{itemize}
+
+
+
+
+\section{Sitne primedbe}
+% Напишете своја запажања на тему штампарских-стилских-језичких грешки
+
+
+\begin{itemize}
+\item strana 3: Uvod:
+  \begin{itemize}
+  \item {\em{U velikoj većini različitih industrija se koriste {\underline{embeded sistemi kako bi} {\underline{ se podigla pouzdanost}}} različitih sistema.}}
+    Zašto?
+  \end{itemize}
+\end{itemize}
+\begin{itemize}
+\item strana 3: Softver u automobilskoj industriji:
+  \begin{itemize}
+  \item {\em{U automobilima postoje {\underline{ECU}}} sistemi}. ECU nije prethodno uvedeno.
+  \item {\em{Bojl dalje u [7] opisuje karakteristike}}. Poželjno bi bilo navesti ko je Bojl. Fusnota ili objašnjenje u zagradi.
+  \item {\em{Naredne stavke govore o kompleksnosti samog softvera.}}. Nakon ove rečenice se navodi lista. Kasnije u radu listi će prethoditi rečenice sa dve tačke.
+  \end{itemize}
+\end{itemize}
+\begin{itemize}
+\item strana 4: Softver u automobilskoj industriji:
+  \begin{itemize}
+  \item {\em{kao i {\underline{uopste}} pri}}. Srpska latinica.
+  \end{itemize}
+\item {\em{ vodi do (2 na 80) mogućnosti}}. Prigodnije bi bilo iskoristiti lepo formatiranje \LaTeX-a i napisati $2^{80}$.
+\end{itemize}
+\begin{itemize}
+\item strana 4: Značaj verifikacije u automobilskoj industriji
+:
+  \begin{itemize}
+  \item {\em{Ipak, što se same automobilske industrije tiče, ne postoji previše studija koje se fokusiraju na testiranje i verifikaciju na višim nivoima, pri integraciji pojedinačnih komponenti. {\underline{Međutim}}, postoji potreba za fokusom i akademskih i industrijskih istraživača u ovoj oblasti.}}. Rečju međutim se iskazuje neka suprotnost. Ovde je pogrešno upotrebljena.
+  \end{itemize}
+\item {\em{ ukupnog {\underline{vemena}}}}. Vremena.
+\item {\em{Neki od primera kada su greške u softveru mogle da dovedu do katastrofalnih posledica:}}. Ovoj rečenici sledi lista. Nekonzistentnost pisanje dve tačke.
+\end{itemize}
+\begin{itemize}
+\item strana 5: Značaj verifikacije u automobilskoj industriji
+  \begin{itemize}
+  \item {\em{{\underline{Guglov (eng. Google)}} {\underline{samovozeći automobil (self-driving car)}} je izazvao nesreću na semaforu}}. Navođenje prevoda za Gugl deluje suvišno, a prevodu za samovozeći automobil nedostaje skraćenica da je reč o engleskom
+  \end{itemize}
+\item {\em{Nakon {\underline{otvranja}} zelenog svetla za automobil}}. Otvaranja.
+\end{itemize}
+\begin{itemize}
+\item strana 5: Izazovi u verifikaciji softvera u automobilskoj industriji:
+  \begin{itemize}
+  \item Prvi pasus ima samo jednu rečenicu. Lista sledi toj rečenici, a nisu navedene dve tačke. Stavke liste su pisane malim slovima.
+  \item {\em{merenje napora: {\underline{Poteskoće}}}}. Poteškoće
+  \end{itemize}
+\item Neobično je da nazivi dve stavke budu identični, kao što je ovde slučaj sa stavkom {\em{dokumentacija}}.
+\end{itemize}
+\begin{itemize}
+\item strana 6: Efikasno testiranje u automobilskoj industriji:
+  \begin{itemize}
+  \item {\em{Softverski sistemi postaju sve {\underline{više kompleksniji}}}}. Pleonazam je pojačavati komparativ rečju više.
+\item {\em{prema Spillner i Linz}}. Fusnota je potrebna. Nigde ranije nisu pominjana ova imena.
+\item {\em{ u {\underline{figuri}} 1}}. Nema unakrsnog upućivanja ka toj figuri, a i u natpisu figure stoji ``Slika 1''.
+\item {\em{Počinje se sa fazom planiranja.}} Nepotpuna rečenica.
+\item {\em{integraciju obavlja proizvođač ili je izvršena od strane drugog dobavljača}}. Nejasan deo rečenice.
+\item {\em{To dovodi do {\underline{metode testiranja crnom kutijom}}}}. Nije standardan prevod.
+\item {\em{Stoga, mora biti izabran podskup test {\underline{slucajeva}}.}} Više zamerki od kojih jedna ošičana latinica. Druga je nekonzistentnost u izražavanju -- u sadržaju su {\em{testni slučajevi}}, a ovde {\em{test slučajevi}}. Treća je način započinjanja rečenice sa ``Stoga,'' što izgleda suvišno i smanjuje čitljivost.
+\item {\em{dosta {\underline{pod-procesa}}}}. Problematičan je pravopis u slučaju podvučene konstrukcije. Na mnogim mestima, koristi se {\em{potproces}}.
+\item {\em{ {\underline{u poređenju na}} ručno izvršenje}}. Netačna jezička konstrukcija.
+\item {\em{u ovom papiru}}. Ovakva sintagma je više u duhu engleskog jezika. A ostatak te rečenice se teško prati.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item strana 7: Efikasno testiranje u automobilskoj industriji:
+  \begin{itemize}
+\item {\em{u prirodnom jeziku, automobilizaciju izbora}}. Automobilizacija? Moguće da je željena reč {\em{automatizacija}}.
+\item {\em{Prikazaćemo zadati koncept pomoću primera{\underline{,}} {\underline{Body Comfort System}} }}. Nedostaje fus nota koja bi pojasnila sta je to. Kasnije u radu će se koristiti akronim BCS, ali nije eksplicitno navedeno da se misli na ovaj pojam. To ostavlja prostor dvosmislenosti. Zarez je suvišan.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item strana 7: Analiza i Dizajn:
+  \begin{itemize}
+  \item {\em{redudanran}}. Greška prilikom kucanja.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item strana 9: Poglavlje 7.1:
+  \begin{itemize}
+  \item {\em{Kaner}}. Fusnota poželjna.
+  \item {\em{ za kreiranje {\underline{đobrih}}'' testnih }}. Štamparska greška.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item strana 13: Poglavlje 8.2:
+  \begin{itemize}
+  \item {\em{Kao što je {\underline{opsano}}}}. Opisano.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item strana 15: poglavlje 10, 10.1:
+  \begin{itemize}
+  \item {\em{đrumska vozila}}. Štamparska greška.
+  \item {\em{automobilsko specifičnim}}. Nije u duhu srpskog jezika. Moguće i da pravopis nije dobar i da fali crtica između reči.
+  \item {\em{netolerisani rizici}}. Nepoznato šta je to.
+  \end{itemize}
+\end{itemize}
+
+
+\section{Provera sadržajnosti i forme seminarskog rada}
+% Oдговорите на следећа питања --- уз сваки одговор дати и образложење
+
+\begin{enumerate}
+\item Da li rad dobro odgovara na zadatu temu?\\
+  Delimično. Centralno pitanje na koje rad odgovara je pitanje kvalitetnog testiranja softvera. Na taj način nisu obuhvaćene i teme koje se tiču formalnog dokazivanja bezbednosno-kritičnih sistema.
+\item Da li je nešto važno propušteno?\\
+   Da. Navedeno je 2 alata za praćenje test slučajeva -- bez objašnjenja. Verifikacijski alati koji nisu namenjeni testiranju nisu navedeni.
+ \item Da li ima suštinskih grešaka i propusta?\\
+   Da. Nakon čitanja ovog rada se stiče utisak da se metode formalnog dokazivanja softvera ne koriste prilikom verifikacije u domenu automobilske industrije.
+ \item Da li je naslov rada dobro izabran?\\
+   Ne. Za naslov je uzeta tema rada. Prigodniji naslov ovom radu bi bio ``Testiranje softvera u automobilskoj industriji''.
+ \item Da li sažetak sadrži prave podatke o radu?\\
+   Sažetak ne postoji.
+ \item Da li je rad lak-težak za čitanje?\\
+   Ovaj rad je težak za čitanje jer sadrži veliki broj gramatičkih i stilskih nepravilnosti. Nekonzistentnost u imenovanju pojmova se proteže kroz ceo rad, a stilovi pisanja različitih autora nisu usaglašeni.
+ \item Da li je za razumevanje teksta potrebno predznanje i u kolikoj meri?\\
+   Da. Rad nije samodovoljan. Pojmovi, akronimi i skraćenice navode se bez prethodnog objašnjenja, a često i bez navođenja referenci ili prevoda na engleski jezik. Na taj način čitalac nije u mogućnosti da pronađe pojam i da razume poentu rečenice ili pasusa.
+ \item Da li je u radu navedena odgovarajuća literatura?\\
+   Da. Literatura odgovara na pitanja koja se uvode u ovom radu.
+ \item Da li su u radu reference korektno navedene?\\
+   Ne. Rad sadrži cele pasuse i poglavlja u kojima se ne navodi nijedan izvor literature. Pored toga, za određene doslovne prevode nije navedena referenca, pa to može podstaći čitaoca da pomisli da su takve konstrukcije autorske.
+ \item Da li je struktura rada adekvatna?\\
+   Ne. Apstrakt i ključne reči nedostaju. Sadržaj se proteže na dve strane. Dešava se da samo jedna rečenica bude pasus ili da rečenica bude prelomljena slikom.
+ \item Da li rad sadrži sve elemente propisane uslovom seminarskog rada (slike, tabele, broj strana...)?\\
+   Ne. Rad prevazilazi ogrančenje broja strana za tim od 4 člana. Nijedna tabela nije dodata u rad. Slike koje su na engleskom su preuzete iz nekog od izvora, ali nije poznato da li je taj izvor naveden među literaturom ili da li je naveden uopšte. Uz sliku bi poželjno bilo navesti odakle je preuzeta.
+ \item Da li su slike i tabele funkcionalne i adekvatne?\\
+   Da. Slike približavaju koncepte šematskim prikazima, ali je postoji ponavljanje jedne iste slike.
+\end{enumerate}
+
+\section{Ocenite sebe}
+% Napišite koliko ste upućeni u oblast koju recenzirate: 
+% a) ekspert u datoj oblasti
+% b) veoma upućeni u oblast
+% c) srednje upućeni
+% d) malo upućeni 
+% e) skoro neupućeni
+% f) potpuno neupućeni
+% Obrazložite svoju odluku
+
+Sa navedene skale, nivo ``malo upućen'' najviše odgovara mojim saznanjima iz ove oblasti. {\em{Malo}} sam upućen jer nemam nikakvih praktičnih znanja, niti znanja specifičnih domenu automobilske industrije.
+
+\chapter{Recenzent \odgovor{--- ocena:} }
+
+
+\section{O čemu rad govori?}
+% Напишете један кратак пасус у којим ћете својим речима препричати суштину рада (и тиме показати да сте рад пажљиво прочитали и разумели). Обим од 200 до 400 карактера.
+Ovaj rad se bavi procesom verifikacije softvera u automobilskoj industriji, sa posebnim osvrtom na testiranje kao tipu verifikacije. Opisane su poteškoće koje se javljaju prilikom testiranja softvera. Detaljno su opisane faze testiranja, koji su problemi na koje se nailazi i kako se oni rešavaju. Govori se o evaluaciji rezultata testiranja i korišćenju mašinskog učenja u verifikaciji.
+
+\section{Krupne primedbe i sugestije}
+% Напишете своја запажања и конструктивне идеје шта у раду недостаје и шта би требало да се промени-измени-дода-одузме да би рад био квалитетнији.
+
+Početak rada je najbolji deo rada, gde su reference navođene ispravno, broj stilskih grešaka je mali, rečenice su jasne. Ostatak rada se teže prati, postoje nekonzistentnosti u terminologiji, reference su retko gde navedene. Rad ostavlja utisak prenatrpanosti, zbog suviše detalja, i nepouzdanosti, zbog zidova teksta bez referisanja na bilo kakve izvore. Većinski deo rada ima mnogo pravopisnih, gramatičkih i sličnih jezičkih grešaka (ne uključujući štamparske), što znatno otežava čitanje i razumevanje rada, pa bez obzira na dobar početak, ostavlja opšti loš utisak. Pored toga, struktura rada nije u potpunosti poštovana -- naslov je isti kao i tema, nedostaje sažetak, sadržaj se prostire na dve strane i broj stranica je prekoračen.
+
+\subsection{Reference}
+\begin{itemize}
+\item Nedostaju reference prilikom navođenja primera grešaka u softveru u okviru poglavlja ``Značaj verifikacije u automobilskoj industriji''. Potrebno je navesti odakle su preuzeti podaci o greškama i njihovim posledicama.
+\item U referenci navedenoj uz poslednju stavku prilikom nabrajanja izazova u verifikaciji softvera u automobilskoj industriji nije pronađen podataka o pomenutom izazovu (uzevši u obzir i da je imenovanje izazova pogrešno).
+\item Prva dva pasusa poglavlja ``Efikasno testiranje u automobilskoj industriji'' ne sadrže reference iako se pozivaju na neke istraživače ({\bf{Spillner i Linz}}) i iznose tvrđenja koja ničime nisu potkrepljena. Takođe, u okviru drugog pasusa ovog poglavlja navodi se {\bf{figura 1}} koja ne postoji nigde u radu.
+\item {\bf{To dovodi do nedostatka popularne pokrivenosti koda.}} --- Na šta se odnosi ``popularna pokrivenost koda''? -- 6. strana 3. pasus.
+\item {\bf{automibilizaciju izbora i prioritizacija test slučaja}} su dva nepoznata pojma, zbog čega bi na ovom mestu u radu trebalo referisati se na neke izvore koji definišu ta dva pojma -- početak 7. strane.
+\item Za celo šesto poglavlje (``Analiza i dizajn'') postoji samo jedna referenca, iako autori navode razne alate koji se koriste prilikom analize i dizajna test slučajeva. Opisuje se faza analize, ali nije poznato odakle dolaze podaci o toj fazi.
+\item Sedmo poglavlje (``Implementacija i egzekucija'') takođe skoro bez referenci. Šta je {\bf{metod kodova}}? Odakle je opis procedure za prioritizaciju testova?
+\item Šta je {\em{testna kampanja}}? Pomenuta više puta u okviru poglavlja ``Rezultat evaluacije i izveštaj testnih rezutlata''.
+\item Nije navedeno odakle su podaci vezani za kompanije Fijat Krajsler i Dženeral Motors i nesrećama koje su bile prouzrokovane greškama u softveru.
+\end{itemize}
+
+\subsection{Nekonzistentnosti}
+\begin{itemize}
+\item U nekim delovima rada koristi se pojam ``test slučaj'', a u drugim ``testni slučaj''. Potrebno je kroz ceo rad koristiti iste nazive za neke pojmove.
+\item Naslov poglavlja je ``Implementacija i egzekucija'', a u samom poglavlju se umesto {\em{egzekucija}} koristi reč {\em{izvršenje}}.
+\item Kroz čitav rad se koristi treće lice množine, dok se na nekoliko mesta koristi drugo lice množine (na primer, {\bf{Da biste dobili rezultat}} na 10. strani).
+\item Postoje skraćenice koje nisu uvedene, poput {\em{BCS}}, {\em{ML}}, {\em{KSML}}, {\em{MELBA}, {\em{MachrnE}}}, {\em{GEM}} (koja se prvi put pominje u zaključku).
+\item U nekim delovima rada korišćen je pojam {\em{testiranje regresije}}, a u nekim {\em{regresiono testiranje}}, pa i {\em{regresijski test}}.
+\end{itemize}
+
+%\subsection{Suvišni delovi}
+%\begin{itemize}
+%\item Dovoljno je u grubim crtama navesti razlog zašto se koristi metoda testiranja crne kutije
+%\end{itemize}
+
+\section{Sitne primedbe}
+% Напишете своја запажања на тему штампарских-стилских-језичких грешки
+\subsection{Štamparske greške}
+
+\begin{itemize}
+\item{\bf Funckije u vozilima} umesto {\bf{Funkcije u vozilima}} -- 3. strana u okviru poglavlja ``Softver u automobilskoj industriji''.
+\item {\bf{medju CAN mrežama}} umesto {\bf{među CAN mrežama}} -- takođe 3. strani u okviru istog poglavlja.
+\item {\bf{Bojl}} --- sudeći po referenci, u pitanju je {\bf{Broj}} -- takođe 3. strana, u poslednjem pasusu.
+\item {\bf{uopste}} umesto {\bf{uopšte}} -- prva stavka na 4. strani.
+\item {\bf{proivođači originalne opreme}} umesto {\bf{proizvođači}} -- druga stavka na 4. strani.
+\item {\bf{(2 na 80)}}, u \LaTeX -u se to može postići, na primer, pomoću \verb|\(2^{80}\)| -- 4. strana u okviru 3. stavke.
+\item {\bf{Verifikiacija softvera}} umesto {\bf{Verifikacija}} -- 4. strana početak poglavalja ``Značaj verifikacije u automobilskoj industriji''.
+\item {\bf{jos prijava}} i {\bf{jos jednog}} umesto {\bf{još}} -- 5. strana 1. pasus.
+\item {\bf{Nakon otvrnja}} umesto {\bf{otvaranja}} -- 5. strana 2. pasus.
+\item {\bf{Poteskoće u određivanju}} umesto {\bf{Poteškoće}} -- početak poglavlja ``Izazovi u verifikaciji softvera u automobilskoj industriji''.
+\item {\bf{dokumentacija}} --- dva puta je navedena ista stavka kao jedan od izazova u verifikaciji, sa različitim opisom -- 5. strana, poslednje dve stavke.
+\item {\bf{prioritizacija test slučaja}} umesto {\bf{prioritizaciju}} -- početak 7. strane.
+\item {\bf{moze se definisati}} umesto {\bf{može}} -- 7. strana 2. pasus.
+\item {\bf{nedovoljano jasan}} umesto {\bf{nedovoljno}} -- 7. strana 3. pasus.
+\item {\bf{koje parametre da refereiše}} umesto {\bf{referiše}} -- početak 8. strane.
+\item {\bf{đobrih" testnih slučajeva}} umesto {\bf{``dobrih''}} -- 9. strana poslednji pasus.
+\item {\bf{u kreiranju stvaranja testova}} --- jedna reč je suvišna, treba samo {\bf{kreiranju testova}} ili samo {\bf{stvaranju testova}} -- 9. strana poslednji pasus.
+\item {\bf{jedan od mogući kriterijum}} umesto {\bf{mogućih kriterijuma}} -- 10. strana 1. pasus.
+\item {\bf{Ograničeno u vremenu}} umesto {\bf{Ograničen}}, pošto se odnosi na testera -- 10. strana 2. pasus.
+\item {\bf{ko bi mogao}} umesto {\bf{kako bi mogao}} -- 1. pasus poglavlja ``Rezultat evaluacije i izveštaj testnih rezultata''.
+\item {\bf{mašinskom učenje}} umesto {\bf{učenju}} -- 1. pasus istog poglavlja.
+\item {\bf{npr., Popravke}} --- malim početnim slovom {\bf{popravke}} -- 12. strana poslednji pasus.
+\item Referisanje na pogrešnu sliku u 2. pasusu na 13. strani (u tekstu {\bf{na slici 1}}, a odnosi se na sliku 4).
+\item {\bf{biti promenjeno}} umesto {\bf{promenjen}} -- 13. strana 2. pasus.
+\item {\bf{opsano}} umesto {\bf{opisano}} -- 13. strana 3. pasus.
+\item {\bf{A (previše) veliki}} --- bez {\bf{A}}, osim ako nema značenje koje nije jasno u datom kontekstu -- 14. strana 2. pasus.
+\item {\bf{tretmana varijabilnost}} --- {\bf{tretmani}} -- 14. strana 2. pasus.
+\item {\bf{Đrumska vozila}} umesto {\bf{``Drumska}} -- 14. strana 3. pasus.
+\item U literaturi je navedeno da se koristi {\em{International Organization for Standardization (ISO), ISO 26262-Part 1 - Part 9}}, a koristi se do dela 10.
+\end{itemize}
+
+
+\subsection{Jezičke greške}
+
+\begin{itemize}
+\item{\bf ne kritične} umesto {\bf{nekritične}} na 3. strani u okviru poglavlja ``Softver u automobilskoj industriji''.
+\item {\bf{više varijanti vozila koji se razlikuju}} umesto {\bf{koje se razlikuju}}, pošto se odnosi na varijante vozila, koje su množina ženskog roda -- 4. strana u okviru 3. stavke.
+\item {\bf{ograničeno resursima stoga je}} --- nedostaje zarez, dakle {\bf{ograničeno resursima, stoga je}} -- 6. strana 3. pasus.
+\item {\bf{To dovodi do metode testiranja crnom kutijom gde je}} --- nedostaje zarez ispred {\bf{gde je}}. Osim toga, metoda se naziva {\em{metod crne kutije}}, a ne {\em{crnom kutijom}} zato što se sistem koji se testira posmatra kao da je u pitanju crna kutija. -- 6. strana 3. pasus.
+\item {\bf{u vezi izbora}} --- pravilno je {\bf{u vezi sa izborom}} -- 6. strana 3. pasus.
+\item {\bf{Stoga, mora biti izabran}} --- zarez suvišan -- 6. strana 3. pasus.
+\item {\bf{automobilsko područije}} --- pravilno je {\bf{područje}} -- 6. strana 3. pasus.
+\item {\bf{dosta pod-procesa}} --- pravilno je {\bf{potprocesa}}, {\em{d}} prelazi u {\em{t}} zbog jednačenja po zvučnosti -- 6. strana 3. pasus.
+\item {\bf{Automatizacija testiranja procesa, uključujući izbor [...], je željeni cilj}} --- ``je'' se nikada ne piše posle zareza, dakle ispravno je {\bf{Automatizacija testiranja procesa je, uključujuću izbor [...], željeni cilj}} -- 6. strana 3. pasus.
+\item {\bf{u poređenju na ručno izvršenje}} umesto {\bf{u poređenju sa ručnim izvršenjem}} -- 6. strana 3. pasus.
+\item {\bf{područiju}} --- već pomenuto, pravilno je {\bf{području}} -- početak 7. strane.
+\item {\bf{redudanran}} umesto {\bf{redundantan}} -- 1. pasus poglavlja ``Analiza i dizajn''.
+\item {\bf{redudantnih test slučajeva}} umesto {\bf{redundantnih}} -- 1. pasus poglavlja ``Analiza i dizajn''.
+\item {\bf{dva načina na koji mogu}} umesto {\bf{na koja mogu}}, pošto se odnosi na načine -- 1. pasus istog poglavlja.
+\item {\bf{da se razlikuju ali da se}} --- nedostaje zarez ispred {\bf{ali}} -- 7. strana 3. pasus.
+\item {\bf{da li postoje redudatnosti}} umesto {\bf{redundantnosti}} --- 7. strana poslednji pasus.
+\item {\bf{Uklanjanje redudansi}} umesto {\bf{Uklanjanje redundansi}} -- poglavlje 6.2.
+\item {\bf{da dovede do redudantnosti}} umesto {\bf{redundantnosti}} -- 1. pasus potpoglavlja ``Uklanjanje redudansi''.
+\item {\bf{u novi projekat ali potrebno je}} --- nedostaje zarez ispred {\bf{ali}} -- 1. pasus istog potpoglavlja.
+\item {\bf{Redudantnost može da dovede}} umesto {\bf{Redundantnost}} -- 2. pasus istog potpoglavlja.
+\item {\bf{velike neefikasnosti i testiranja kako se jedan isti}} --- nedostaje zarez pre {\bf{kako}}, ali bolje je, na primer, {\bf{i testiranja, sobzirom da se jedan isti}} -- 2. pasus istog poglavlja.
+\item {\bf{i otkloni redudantnosti}} umesto {\bf{redundantnosti}} -- 2. pasus istog poglavlja.
+\item {\bf{i bez redudantnosti}} umesto {\bf{redundantnosti}}  -- početak poglavlja ``Implementacija i egzekucija''.
+\item {\bf{Zbog toga, za odabir test slučajeva je važno}} --- ne treba zarez posle {\bf{zbog toga}}. Pritom je bolje i promeniti red reči, pa reći {\bf{Zbog toga je za odabir test slučajeva važno}} -- 9. strana 2. pasus.
+\item {\bf{kreiranih testova slučajeva}} --- ispravno {\bf{test slučajeva}} -- 9. strana poslednji pasus.
+\item {\bf{neuspešna funkcionalnost bi se trebala ponovo testirati}} --- pravilno je {\bf{neuspešnu funkcionalnsot bi trebalo ponovo testirati}} -- 10. strana 1. pasus.
+\item {\bf{ pre – uslovima i post - uslovima}} --- ne treba koristiti razmake pre i posle crte kada je njena funkcija spajanje dve reči u jednu -- 1. pasus potpoglavlja ``Kombinacija test slučajeva''.
+\item {\bf{post - stanje}} --- ista zamerka -- 2. pasus istog potpoglavlja.
+\item {\bf{visoko zasniva}} --- ? -- 1. pasus poglavlja ``Rezultat evaluacije i izveštaj testnih rezultata''.
+\item {\bf{meta-podaci}} --- pravilno je {\bf{metapodacima}} --- na više mesta u 8. i 9. poglavlju.
+\item {\bf{vezan za fukncionalnošću}} --- loš padež, treba akuzativ umesto instrumentala, {\bf{vezan za funkcionalnost}} -- 12. strana poslednji pasus.
+\item {\bf{jer se pridruženi meta-podaci trebaju menjati}} --- prvo, piše se {\bf{metapodaci}}. Drugo, nepravilna upotreba glagola trebati, ispravno je {\bf{jer pridružene metapodatke treba menjati tokom vremena}} -- 12. strana poslednji pasus.
+\item {\bf{uzoraka u podacima, koji se mogu}} --- treba bez zareza -- 13. strana 1. pasus.
+\item Strana imena bolje pisati na srpskom, onako kako bi se čitala, a u zagradi navesti kako se piše originalno. Na primer, na 14. strani umesto {\bf{Barros}}, bolje je {\bf{Baros (Barros)}}.
+\item {\bf{alatiranje}} --- šta znači? -- 14. strana 2. pasus.
+\item {\bf{intuitiraju}} --- da li reč postoji u srpskom jeziku? -- 14. strana 2. pasus.
+\item {\bf{između komponenata}} --- pravilno {\bf{komponenti}} -- 14. strana 2. pasus.
+\item {\bf{ReiBig}} --- prvo, u pitanju je prezime {\bf{Rei{\ss}ing}}. Drugo, bolje navesti kako se čita na srpskom, a u zagradi original -- 14. strana 2. pasus.
+\item {\bf{Briand}} --- slična zamerka -- 14. strana 3. pasus.
+\item {\bf{Fiat Crysler}} i {\bf{General Motors}} --- slična zamerka --- 15. strana 1. pasus.
+\item {\bf{bezbednosno kritične}} --- piše se sa crtom između -- 15. strana 3. pasus.
+\item {\bf{funkcionalno bezbednosni}} --- potrebna crta između -- 15. strana 3. pasus.
+\item {\bf{uključujući: [...]}} --- sve što je navedeno nakon ovoga se nalazi u nominativu, a trebalo bi u akuzativu -- 17. strana 2. stavka.
+\item {\bf{orjentisanu}} --- pravilno je {\bf{orijentisanu}}. Dodatno, treba {\bf{sigurnosno-orijantisanu analizu}} sa crtom -- ponavlja se dva puta u okviru stavke ISO 26262-9 na 17. strani.
+\item {\bf{npr., Pristupi u mašinskom učenju u testiranju u crnoj kutiji}} --- treba {\bf{npr., pristupi u mašinskom učenju u testiranju crne kutije}} -- u okviru zaključka.
+\item {\bf{Drugi trebaju neke buduće radnje}} --- prvo, ``trebaju'' je oblik koji se retko koristi u srpskom jeziku, možda je bolje koristiti {\bf{Drugim treba}}. Drugo, {\bf{buduće radnje}} je neformalno. Treće, jasnije je o čemu se radi ukoliko se naglasi da su u pitanju drugi koncepti. Predlog refomulacije: {\bf{Drugim konceptima treba dodatni budući napor da bi bili}} -- u okviru zaključka.
+\end{itemize}
+
+
+
+\subsection{Stilske greške}
+
+\begin{itemize}
+\item{\bf{ECU}} --- nije loše navesti od čega je skraćenica ECU --
+  3. strana u okviru poglavlja ``Softver u automobilskoj industriji''.
+\item {\bf{kao što su avionska, raketna, automobilska i slične}} --- predlog da se napiše {\bf{i slične industrije}} da bi rečenica zvučala potpuno -- 4. strana, na početku poglavlja ``Značaj verifikacije u automobilskoj industriji''.
+\item {\bf{ne postoji previše studija}} --- mnogo je bolje reći {\bf{ne postoji mnogo studija}} ili {\bf{u svom istraživanju nismo naišli na mnogo studija}} -- takođe na početku poglavlja ``Značaj verifikacije u automobilskoj industriji''.
+\item {\bf{Međutim, postoji potreba}} --- ``međutim'' bi trebalo da uvede neku suprotnost u odnosu na prethodnu rečenicu, što ovde, međutim, nije slučaj. Prikladnije reči bi bile {\bf{dakle}} ili {\bf{stoga}} -- kraj 1. pasusa u okviru poglavlja ``Značaj verifikacije u automobilskoj industriji''.
+\item {\bf{jako ozbiljne}} --- neformalno, dovoljno je reći {\bf{ozbiljne}} -- 2. pasus u okviru poglavlja ``Značaj verifikacije u automobilskoj industriji''.
+\item Izmeniti strukturu dela trećeg poglavlja u kome se navode primeri grešaka u softveru koje mogu ili su dovodile do teških posledica (na kraju poglavlja ``Značaj verifikacije u automobilskoj industriji''), zato što postoji pasus koji sadrži samo jednu rečenicu, koja predstavlja uvod u naredna dva pasusa. Mogu sva tri, na primer, činiti jednu celinu.
+\item {\bf{sama od sebe bez ikakvog razloga}} --- suvišno reći oba, ili {\bf{sama od sebe}} ili {\bf{bez ikakvog razloga}} -- 5. strana 1. pasus.
+\item {\bf{(self-driving car)}} --- treba navesti u zagradi da je u pitanju izraz na engleskom jeziku, tj. {\bf{(eng. self-driving car)}} -- 5. strana 2. pasus.
+\item Početak poglavlja ``Izazovi u verifikaciji softvera u automobilskoj industriji'' predstavlja jedan pasus koji se sastoji iz samo jedne rečenice. Trebalo bi uvesti čitaoca u poglavlje detaljnijih objašnjenjem.
+\item {\bf{14. februara 2016. godine}} --- rečenice ne treba počinjati brojevima, potrebno je pomeriti datum u rečenici, ili preformulisati celu rečenicu. -- 5. strana 2. pasus.
+\item {\bf{različito stručnih ljudi}} --- bolje je reći {\bf{ljudi različite stručnosti}} -- poglavlje ``Izazovi u verifikaciji softvera u automobilskoj industriji''.
+\item {\bf{sve više kompleksniji}} je pleonazam. Treba reći {\bf{sve kompleksniji}} -- 6. strana 1. pasus.
+\item Dve skoro iste rečenice jedna za drugom: {\bf{Stoga kvalitet softvera je vrlo bitna stavka kod automobilskih softverskih sistema. Testiranje softvera je jedna od najbitnijih stavki prilikom razvoja softvera za automobile.}}. Potrebno preformulisati drugu rečenicu i/ili je spojiti sa prvom -- poglavlje ``Efikasno testiranje u automobilskoj industriji'' 1. pasus.
+\item {\bf{Ovo se može utvrditi na primer,}} --- nedostaje zarez ispred {\bf{na primer}} -- poglavlje ``Efikasno testiranje u automobilskoj industriji'' 2. pasus.
+\item U drugom pasusu poglavlja ``Efikasno testiranje u automobilskoj industriji'' ni na koji način nisu naglašene faze procesa testiranja softvera, što čini pasus nepreglednim.
+\item {\bf{svi naznačeni test slučajevi ne mogu biti izvršeni}} --- neprirodna konstrukcija rečenice, bolje {\bf{ne mogu svi naznačeni test slučajevi biti izvršeni}}.
+\item {\bf{podskup test slucajeva}} umesto {\bf{slučajeva}} -- 6. strana 3. pasus.
+\item {\bf{koji će verovatno uočiti grešku}} --- bolje {\bf{za koji je verovatno da će uočiti grešku}} -- 6. strana 3. pasus.
+\item {\bf{U metodi testiranja crnom kutijom, koja je greška za automobilske softvere i sisteme, izvorni kod nije dostupan.}} --- prvo, kao što je već napomenuto, metoda se zove {\em{metoda crne kutije}}. Drugo, {\bf{koja je greška za automobilske softvere}} odaje utisak neformalnosti, pa je potrebno drugačije konstruisati rečenicu ili deo rečenice -- 6. strana 3. pasus.
+\item {\bf{u ovom papiru}} --- treba reći {\bf{u ovom radu}}, {\em{papir}} je direktan prevod engleske reči {\em{paper}} -- 6. strana 4. pasus.
+\item Prva rečenica poslednjeg pasusa poglavlja ``Efikasno testiranje u automobilskoj industriji'' nema smisla.
+\item {\bf{U ovoj fazi glavni zadatak je kreiranje slučajeva za testiranje, kako to predstavlja odnos samog procesa testiranja.}} --- nije jasno šta ova rečenica znači -- 1. pasus poglavlja ``Analiza i dizajn''.
+\item {\bf{Ova faza je važna za bilo koju formu testiranja, kako se u njoj definiše koje informacije su dostupne i kako im pristupiti prilikom testiranja.}} --- opet nije jasno šta je smisao rečenice -- 1. pasus istog poglavlja.
+\item {\bf{Specifikacija ove funkcionalnosti se sastoji od, u slučaju da je omogućena zaštita prstiju, detektuje se objekat, prsti, prilikom zatvaranja prozora i zatvaranje prozora se prekida kako ne bi došlo do povrede.}} --- loše konstruisana rečenica, teško je razumeti od čega se zaista sastoji specifikacija funkcionalnosti u datom primeru -- 7. strana 2. pasus.
+\item {\bf{Broj test slučajeva se uvećava vremenom, kako novi projekti u kompanije se često}} --- prvo, štamparska greška, treba {\bf{kompaniji}}. Drugo, treba {\bf{kako se novi projekti u kompaniji}} ili bolje {\bf{s obzirom da se novi projekti u kompaniji}} -- 1. pasus potpoglavlja ``Uklanjanje redudansi''.
+\item {\bf{cilj hiljadu starih testova}} --- neformalni izraz. Bolje je, na primer, koristiti {\bf{cilj velikog broja starih testova}} -- 1. pasus istog potpoglavlja.
+\item {\bf{moguće je da pojedini novi testovi su}} --- bolje promeniti red reči u rečenici u {\bf{moguće je da su pojedini novi testovi}}.
+\item {\bf{Pa sledi da ovo nije bas efikasan}} --- prvo, nedostaje jedna dijakritika, {\bf{baš}}. Drugo, {\bf{baš efikasan}} je neformalan izraz. Treće, suvišno je reći {\bf{Pa sledi}}, dovoljna je jedna od te dve reči, ali je {\bf{sledi}} nešto što se neformalno koristi, stoga treba koristiti {\bf{pa}}. Pritom, nema razloga odvajati tu rečenicu od prethodne, mogu se spojiti zarezom -- 2. pasus istog poglavlja.
+\item {\bf{može dosta da pomogne}} --- {\bf{dosta}} je neodređeno, može se izbaciti bez promene značenja rečenice -- 9. strana poslednji pasus.
+\item {\bf{Da bismo to omogućili}} loš je početak pasusa, jer se poziva na prethodni, a nije ni jasno na šta se {\bf{to}} tačno odnosi -- 10. strana 1. pasus.
+\item {\bf{kao ulaz}} --- jasno je da se misli na ulaz u proceduru koja vrši prioritizaciju testova, ali je suvišno. Može se koristiti neki drugi izraz da se naglasi da su skup test slučajeva i skup kriterijuma za odabir neophodni za korišćenje te procedure, ali {\bf{kao ulaz}} se može i izostaviti bez promene značenja rečenice -- 10. strana 1. pasus.
+\item {\bf{Da biste dobili}} --- jedina rečenica napisana u drugom licu množine. Uz to je ostatak rečenice nejasan ({\bf{uređenja su kombinovana}}) -- 10. strana 1. pasus.
+\item {\bf{Istorija testa može biti 75\%, a vreme izvršenja sa 25\% da utiče na rezultat}} --- delovi rečenice se ne poklapaju, treba {\bf{Istorija testa može sa 75\%, a vreme izvršenja sa 25\% da utiče na rezultat}} -- 10. strana 2. pasus.
+\item {\bf{Testni slučajevi se uređuju u obliku, da je prvi test slučaj najvažniji}} --- može se razumeti šta je rečeno, ali je neformalno i neispravno. Može, na primer, {\bf{Testi slučajevi se uređuju u obliku takvom da je prvi test slučaj najvažniji}} -- 10. strana 2. pasus.
+\item {\bf{veoma pogodan}} --- ne treba koristiti priloge poput {\bf{veoma}}, neodređeni su -- 10. strana poslednji pasus.
+\item Na 10. strani se 1. pasus završava usred rečenice, a naredni počinje nastavkom te rečenice. Pritom nije jasno značenje rečenice.
+\item Druga rečenica potpoglavlja ``Kombinacija test slučajeva'' (počinje {\bf{Jedna od mogućnosti}}) je nejasna.
+\item {\bf{prozora električne energije}} --- nije u skladu sa ostatkom rečenice u kome se govori o pomeranju prozora automobila -- 2. pasus istog potpoglavlja.
+\item {\bf{izvući znanje}} --- neformalno -- 1. pasus poglavlja ``Rezultat evaluacije i izveštaj testnih rezultata''.
+\item {\bf{definiše cilj da se napiše}} --- neformalno, preformulisati -- 1. pasus istog poglavlja
+\item {\bf{Dobar test za regresiju bi verovatno trebalo da propadne, ako promene izazivaju greške u testiranoj oblasti programa koji se testira.}} --- rečenica nije razumljiva -- 1. pasus istog poglavlja.
+\item {\bf{tvrditi da je}} --- treba bez {\bf{je}} -- 12. strana poslednji pasus.
+\item {\bf{veoma menja}} --- bez {\bf{veoma}}. Takođe, u istoj rečenici, dva puta se ponavlja reč {\bf{jer}}. Drugo pojavljivanje se može zameniti sa {\bf{pošto}} -- 12. strana poslednji pasus.
+\item {\bf{Na primer, može se zamisliti da klasifikator, koji odlučuje da li će probni slučaj verovatno otkriti neuspeh ili ne, i stoga mu dodeliti viši prioritet za sledeće izvršenje testiranja.}} --- nepovezana rečenica, preformulisati -- 13. strana 1. pasus.
+\item {\bf{Pretpostavimo da je test slučaj izabran za test slučaj i izvršen je.}} --- ? -- 13. strana 2. pasus.
+\item {\bf{Slika 4: Ilustruje primer studije BCS}} --- dovoljno reći {\bf{Slika 4: Primer studije BCS}} -- 13. strana.
+\item {\bf{Opisani metod i dalje zahteva ljudski ulaz, pošto meta-podaci dodeljuju testove za odabir, kriterijume selekcije i testeri moraju obezbediti odgovarajuće težine.}} --- ? - 13. strana 3. pasus.
+\item {\bf{izbor ovog kriterijuma za izbor}} --- bez {\bf{za izbor}} -- 13. strana poslednji pasus.
+\item Jedan pasus jedna rečenica. Pritom, šta znači {\bf{pregledan je rad testiranjem crne kutije}}, pa onda i ostatak rečenice? -- početak poglavlja ``Slični radovi''.
+\item {\bf{t-mudrih}} --- Posle kratkoh istraživanja po Internetu, može se zaključiti da se {\bf{t}} odnosi na neodređenu veličinu torke koja predstavljaju ulaz u neki algoritam. Treba preformulisati opis algoritma u skladu sa pravim značenjem -- 14. strana 2. pasus.
+\item {\bf{Uvođenjem novih [...], imaju za cilj}} --- {\bf{Uveđenje novih [...], ima za cilj}} -- 15. strana 1. pasus.
+\item {\bf{polako ali sigurno prati}} --- neformalno -- 15. strana 2. pasus.
+\item {\bf{Iako većina programera u automobilskoj industriji prepoznaje ova imena, nevoljno se pridržavaju ovih standarda nadajući se da će neko drugi brinuti o njima.}} --- kakav je ovo podatak? -- 15. strana 2. pasus.
+\item {\bf{automobilsko specifičnim internacionalnim standardom}} --- prirodnije je reći {\bf{internacionalnim standardom specifičnim za automobile}} -- 15. strana 3. pasus.
+\item {\bf{koncept faza}} --- možda bolje {\bf{konceptualna faza}} -- više puta u potpoglavlju ``ISO 26262 standard''.
+\end{itemize}
+
+\section{Provera sadržajnosti i forme seminarskog rada}
+% Oдговорите на следећа питања --- уз сваки одговор дати и образложење
+
+\begin{enumerate}
+\item Da li rad dobro odgovara na zadatu temu?\\
+  Ne. Rad je preopširan, sa mnogo detalja u kojima je teško naći suštinu. Iako je u naslovu rada ``standardi i propisi'' o njima je bilo najmanje reči.
+\item Da li je nešto važno propušteno?\\
+  Da. Nedostatak referenci je veliki propust. Loša struktura pasusa je prisutna kroz skoro čitav rad. Jedan primer za to je pasus u kome se opisuje Slika 2, koji prvo opisuje početak algoritma prikazanog na slici, pa govori o primerima kriterijuma za prioritizaciju. Na kraju pasusa se stiče utisak da slika nije ni opisana.
+\item Da li ima suštinskih grešaka i propusta?\\
+  Da. Nedostatak referenci je najveći propust. Ono što je napisano se velikim delom ne može ni proveriti, jer nije poznato odakle su podaci.
+\item Da li je naslov rada dobro izabran?\\
+  Ne. Naslov rada je isti kao i tema rada.
+\item Da li sažetak sadrži prave podatke o radu?\\
+  Sažetak nije napisan.
+\item Da li je rad lak-težak za čitanje?\\
+  Rad je uglavnom težak za čitanje. Početak rada je mnogo čitljiviji od ostatka.
+\item Da li je za razumevanje teksta potrebno predznanje i u kolikoj meri?\\
+  Da. Pre svega zbog korišćenja skraćenica koje nisu objašnjene, i zbog nedostatka referenci na koje bi neupućeni čitalac mogao da se osloni.
+\item Da li je u radu navedena odgovarajuća literatura?\\
+  Ne. Postoji veliki broj citiranih radova, ali postoje delovi rada koji nisu potkrepljeni nikakvom literaturom.
+\item Da li su u radu reference korektno navedene?\\
+  Ne. Veliki procenat rada nije potkrepljen literaturom. Na jednom mestu je navedena literatura koja ni ne sadrži citirani podatak.
+\item Da li je struktura rada adekvatna?\\
+  Ne. Nedostaje sažetak, broj stranica je veći od zahtevanog i sadržaj se prostire na dve strane.
+\item Da li rad sadrži sve elemente propisane uslovom seminarskog rada (slike, tabele, broj strana...)?\\
+  Ne, broj strana (20) je veći od propisanih 15, nedostaje sažetak, sadržaj se prostire na dve strane i ne postoji nijedna tabela u radu.
+\item Da li su slike i tabele funkcionalne i adekvatne?\\
+  Delimično. Slike su adekvatne, ali ne dobro objašnjene. Dve slike su iste sa drugačijim natpisom. Tabela nema u radu.
+\end{enumerate}
+
+\section{Ocenite sebe}
+% Napišite koliko ste upućeni u oblast koju recenzirate: 
+% a) ekspert u datoj oblasti
+% b) veoma upućeni u oblast
+% c) srednje upućeni
+% d) malo upućeni 
+% e) skoro neupućeni
+% f) potpuno neupućeni
+% Obrazložite svoju odluku
+Srednje sam upućena u ovu oblast. Znanje koje imam je posledica samostalnog istraživanja tokom recenziranja ovog rada, stečeno je tokom studija ili je posledica popularnosti ove oblasti.
+
+\chapter{Recenzent \odgovor{--- ocena:} }
+
+
+\section{O čemu rad govori?}
+% Напишете један кратак пасус у којим ћете својим речима препричати суштину рада (и тиме показати да сте рад пажљиво прочитали и разумели). Обим од 200 до 400 карактера. 
+Kako broj funkcionalnosti koje pružaju današnji automobili raste, softveri koji se ugrađuju u njih bivaju sve kompleksniji. Stoga je u radu objašnjena potreba detaljnog testiranja svih delova softvera. Opisani su glavni aspekti u razvoju softvera za automobile.  Nabrojani su izazovi sa kojima verifikacija softvera treba da se nosi. Napomenuto je da postoji  pet faza u testiranju, i detaljnije su objašnjene pojedine faze. U radu je stavljen akcenat na objašnjavanje metoda testiranja crnom kutijom, gde je testiranje zasnovano na specifikaciji sistema. Prikazani su i glavni standardi u vezi sa automobilskom industrijom.
+
+\section{Krupne primedbe i sugestije}
+% Напишете своја запажања и конструктивне идеје шта у раду недостаје и шта би требало да се промени-измени-дода-одузме да би рад био квалитетнији.
+\subsection{Struktura rada}
+U seminarskom radu bilo je potrebno ispoštovati određena pravila koja su bila spomenuta na predavanjima. Stoga će u nastavku biti navedene primedbe na koje treba obratiti pažnju kako bi sam rad izgledao kvalitetnije.  
+
+\begin{itemize}
+
+  \item Na prvoj strani rada odmah ispod naslova, potpisanih autora i datuma, potrebno je da postoji apstrakt, odnosno rezime rada sa ciljem da se motivišu čitaoci da isti i pročitaju. Naime, apstrakt treba da čini jedan pasus koji je nezavisan i sveobuhvatan u kome su jasno naznačeni problemi samog rada kao i glavni rezultati. 
+  \item Sadržaj mora da stane na prvu stranu rada. Kako bi bilo moguće da apstrakt i sadržaj stanu na jednu stranu, predlog je da se imena i prezimena autora kao i email adrese sažmu u manju broj redova. Neophodno je i redukovati sadržaj na prvoj strani, stoga ne bi bilo loše da se ostave samo podnaslovi u sadržaju, a da se sekcije u vezi sa tim podnaslovima uklone.
+  \item Ono što je takođe bilo potrebno ispoštovati je broj strana rada. Grupa od 4 člana treba da napiše rad od 12 do 15 strana. Stoga je potrebno na neki način smanjiti broj strana, ili skraćivanjem određenih pasusa ili izbacivanjem nepotrebnog sadržaja.
+  \item U radu pored najmanje jedne slike, potrebno je da postoji i barem jedna tabela.
+
+\end{itemize}
+
+\subsection{Ostale krupne primedbe}
+
+\begin{itemize}
+
+\item U radu na više mesta nisu adekvatno postavljene reference. Reference je potrebno postaviti na kraju svakog tvrđenja.
+ 
+\item U petoj sekciji "Efikasno testiranje u automobilskoj industriji", u drugom pasusu spominje se da je proces testiranja softvera prikazan u "figuri 1", koja se kasnije nigde ne spominje. Možda ne bi bilo na odmet da se jasno navedu svih pet faza u procesu testiranja, ili da se prikažu na nekoj slici kako bi bilo jasnije koje su tačno faze testiranja u pitanju, jer nije odmah uočljivo iz samog teksta.
+
+\item U sedmoj sekciji "Implementacija i egzekucija", 
+potrebno je pojasniti šta je to metod bele kutije. Naime, objašnjeno je šta je to metod crne kutije ali nigde nije data paralela ili objašnjenje za metod bele kutije.
+
+\end{itemize}
+
+
+\section{Sitne primedbe}
+% Напишете своја запажања на тему штампарских-стилских-језичких грешки
+Naredne primedbe odnose se na štamparske, stilske, jezičke greške kao i nedostajuće reference. 
+
+\subsection{Sekcija 2. Softver u automobilskoj industriji}
+
+\begin{itemize}
+\item U četvrtom redu prvog pasusa treba napisati \textit{pogođena}  umesto \textit{pogodjena}.
+
+\item U petom redu istog pasusa treba napisati \textit{nekritičnih} umesto \textit{ne kritičnih}.
+
+\item U karakteristici "uloga", treba napisati \textit{Funkcije} umesto \textit{Funckije}.
+
+\item U karakteristici "uloga", treba napisati \textit{nekritične} umesto \textit{ne kritične}.
+
+\item U karakteristici "interakcija i rasprostranjenost", u dvanaestom redu treba napisati  \textit{između} umesto \textit{izmedju}.
+
+\item U karakteristici "interakcija i rasprostranjenost", u trinaestom redu treba napisati \textit{među} umesto \textit{medju}.
+
+\item U poslednjem pasusu na trećoj strani u trećem redu nije ispravno napisano ime autora koji se spominje. 
+
+\item U delu "heterogenost podsistema", u drugom redu treba napisati \textit{uopšte} umesto \textit{uopste}.
+
+\item U istom delu u četvrtom redu treba napisati \textit{jedan} umesto \textit{jedna}.
+
+\item U delu "visoko konfigurabilni softver", u trećem redu treba napisati \textit{Stoga} umesto \textit{S toga}.
+
+\item U delu "visoko konfigurabilni softver", u šestom redu razmotriti da li "2 na 80", treba da stoji u zagradi ili pronaći drugi način zapisa.
+
+\end{itemize}
+
+
+\subsection{Sekcija 3. Značaj verifikacije u automobilskoj industriji}
+
+\begin{itemize}
+\item U prvom pasusu na petoj strani u četvrtom redu treba napisati \textit{još} umesto \textit{jos} na dva mesta.
+
+\item U drugom pasusu na petoj strani u četvrtom redu treba napisati \textit{otvaranja} umesto \textit{otvranja}.
+
+\item Na kraju samog pasusa potrebno je navesti izvor informacija u vezi sa pomenutim primerima.
+
+\end{itemize}
+
+\subsection{Sekcija 4. Izazovi u verifikaciji softvera u automobilskoj industriji}
+
+\begin{itemize}
+
+\item U drugom redu ove sekcije razmotriti da li je potrebno staviti dve tačke umesto tačke na kraju rečenice, s obzirom da se navode svi izazovi u nastavku teksta.
+
+\item U trećem redu treba napisati \textit{Poteškoće} umesto \textit{Poteskoće}.
+
+\end{itemize}
+
+
+
+\subsection{Sekcija 5. Efikasno testiranje u automobilskoj industriji}
+
+\begin{itemize}
+
+\item Za prvi i drugi pasus ove sekcije nedostaju reference. 
+
+\item U trećem pasusu ove sekcije u četrnaestom redu treba napisati \textit{slučajeva} umesto \textit{slucajeva}.
+
+\item U istom pasusu u šesnaestom i sedamnaestom redu treba preformulisati rečenicu. Nije sasvim jasno značenje same rečenice.
+
+\item U istom pasusu u poslednjem redu treba staviti razmak između reči \textit{izvršenje} i navedene reference.
+
+\end{itemize}
+
+\subsection{Sekcija 6. Analiza i dizajn}
+\begin{itemize}
+\item U celoj sekciji nedostaju reference na kraju pasusa.
+
+\item  U prvom pasusu u petom redu treba napisati \textit{redudantan} umesto \textit{redudanran}.
+
+\item Rečenica koja počinje sa " 'Specifikacija ove funkcionalnosti se sastoji ...", u drugom pasusu ove sekcije je potrebno ispraviti. Gramatički nije dobro napisana.
+
+\item U trinaestom redu drugog pasusa ove sekcije treba napisati \textit{može} umesto \textit{moze}.
+
+\item  U sekciji 6.1 u poslednjem pasusu u rečenici "Na primer, potrebno je da test dizajner piše PowerWindow i definiše redom preduslove, akcije i očekivani rezultat", treba navesti na koji primer se tačno odnosi data rečenica. Može se započeti rečenica sa "Kao što je prikazano na primeru koji se može videti na slici 1 ...".
+
+\item Umesto tri tačke na kraju poslednjeg pasusa sekcije 6.1 treba staviti nešto drugo, na primer "i tako dalje", jer nije dobro da u radu postoje tri tačke.
+
+\item U sekciji 6.2 u drugom redu umesto \textit{kako novi projekti u kompanije se} treba napisati \textit{kako se novi projekti u kompanijama}.
+
+\item Sekciju 6.2 potrebno je ponovo razmotriti i preformulisati rečenice, jer gramatički ne izgledaju ispravno.
+
+\item U sekciji 6.2 u drugom pasusu u četvrtom redu umesto \textit{bas} treba napisati \textit{baš}.
+
+\end{itemize}
+
+\subsection{Sekcija 7. Implementacija i egzekucija}
+
+\begin{itemize}
+\item U celoj sekciji nedostaju reference 
+na pojedinim mestima, stoga treba ponovo razmotriti celu sekciju.
+
+\item U sekciji 7.1 u drugom pasusu u osmom redu nisu dobri znaci navoda.
+
+\item Na desetoj strani u petom redu nedostaje reč "'slici".
+
+\item Na desetoj strani u desetom redu treba izbaciti reč "od".
+
+\item U sekciji 7.1 na kraju trećeg pasusa odjednom je prekinuta rečenica i navedena je slika. 
+
+\item U sekciji 7.1 u trećem pasusu rečenica "Istorija testa može biti 75\%, a vreme izvršenja sa 25 \% da utiče na rezultat.", nema logičkog smisla i nije pravilno napisana. 
+
+\item U sekciji 7.1 u trećem pasusu takođe treba preformulisati narednu rečenicu koja počinje sa "Testni slučajevi se uređuju ...".
+
+\item U sekciji 7.2 u drugom pasusu navodi se "'studija slučaja BCS", ali nigde nije napisana referenca ka izvoru.
+
+\item U sekciji 7.2 u drugom pasusu u petom redu treba napisati \textit{se pomera prema dole} umesto \textit{se pomeri dole}.
+
+
+\item U sekciji 7.2 u trećem pasusu treba preformulisati prvu rečenicu jer nije jasno šta označava reč  \textit{nije} na kraju rečenice. 
+
+\end{itemize}
+
+
+\subsection{Sekcija 8. Rezultat evaluacije i izveštaj testnih rezultata}
+
+\begin{itemize}
+
+\item U prvom pasusu u šestom redu treba napisati  \textit{koji bi} umesto  \textit{ko bi}.
+
+\item U sekciji 8.1 u petom redu treba napisati  \textit{funkcionalnost} umesto  \textit{funkcionalnošću}.
+
+\end{itemize}
+
+
+\subsection{Sekcija 9. Slični radovi}
+\begin{itemize}
+
+\item U drugom pasusu u drugoj rečenici treba napisati \textit{predstavlja} umesto \textit{predstavljaja}.
+
+\item U drugom pasusu u devetnaestoj rečenici u prvom nabrajanju pod (i) nije jasno pojavljivanje slova "A".
+
+\end{itemize}
+
+
+\subsection{Sekcija 10. Standardi u automobilskoj industriji}
+\begin{itemize}
+
+\item U celoj sekciji nisu adekvatno navedene reference, kao na primer u prva dva pasusa gde se navode nesreće kao i standardi, potrebno je navesti izvor informacija na kraju pasusa.
+
+\item U sekciji 10.1 u trećem redu treba napisati \textit{Drumska vozila} umesto \textit{Đrumska vozila} i adekvatno navesti navodnike (greška u latex-u).
+
+\item Slika pod rednim brojem pet na šesnaestoj strani nije adekvatne rezolucije.
+ 
+\end{itemize}
+
+
+\subsection{Sekcija 11. Zaključak}
+
+\begin{itemize}
+
+\item U zaključku nije poznata niti prethodno objašnjena skraćenica "GEM".
+
+\item Poslednja rečenica nije ispravno napisana.
+\end{itemize}
+
+\section{Provera sadržajnosti i forme seminarskog rada}
+% Oдговорите на следећа питања --- уз сваки одговор дати и образложење
+
+\begin{enumerate}
+\item Da li rad dobro odgovara na zadatu temu?\\ Da.
+\item Da li je nešto važno propušteno?\\ Što se same teme tiče, rad je dobro napisan, međutim u radu na samom početku nedostaje apstrakt. Potrebno je smanjiti sadržaj kako bi stao na jednu stranu i na pojedinim mestima nedostaju reference.
+\item Da li ima suštinskih grešaka i propusta?\\  Nema suštinskih grešaka, što se propusta tiče sve je navedeno u odgovoru na prethodno pitanje.
+\item Da li je naslov rada dobro izabran?\\ Da.
+\item Da li sažetak sadrži prave podatke o radu?\\U radu nedostaje sažetak.
+\item Da li je rad lak-težak za čitanje?\\Rad je lak za čitanje.
+\item Da li je za razumevanje teksta potrebno predznanje i u kolikoj meri?\\Za razumevanje teksta nije potrebno neko veliko predznanje, mada je za pojedine delove teksta neophodno. 
+\item Da li je u radu navedena odgovarajuća literatura?\\ Jeste, ali na pojedinim mestima nedostaju reference.
+\item Da li su u radu reference korektno navedene?\\ Nisu na svim mestima korektno navedene reference, stoga treba obratiti pažnju na to.
+\item Da li je struktura rada adekvatna?\\Kao što je već napomenuto, u radu nedostaje apstrakt, ali što se ostalog dela strukture rada tiče sve je u redu.
+\item Da li rad sadrži sve elemente propisane uslovom seminarskog rada (slike, tabele, broj strana...)?\\U radu nedostaje tabela i broj strana je potrebno smanjiti tako da ukupan broj strana bude od 12 do 15.
+\item Da li su slike i tabele funkcionalne i adekvatne?\\Slike su adekvatne, sem poslednje slike koja je loše rezolucije pa nije čitljiva. U samom radu nedostaje tabela.
+\end{enumerate}
+
+\section{Ocenite sebe}
+% Napišite koliko ste upućeni u oblast koju recenzirate: 
+% a) ekspert u datoj oblasti
+% b) veoma upućeni u oblast
+% c) srednje upućeni
+% d) malo upućeni 
+% e) skoro neupućeni
+% f) potpuno neupućeni
+% Obrazložite svoju odluku
+
+
+Nisam imala prilike da se bavim ovom oblašću, pa bih sebe ocenila kao "'skoro neupućena".
+
+
+\chapter{Dodatne izmene}
+%Ovde navedite ukoliko ima izmena koje ste uradili a koje vam recenzenti nisu tražili. 
+
+\end{document}
+
