@@ -36,7 +36,7 @@ U velikoj većini različitih industrija se koriste embeded sistemi kako bi se p
 
 
 \section{Softver u automobilskoj industriji}
-\label{sec:softer}
+\label{sec:softer} 
 
 Automobilska industrija je tradicionalno pretežno bazirana na konceptima mašinskog inženjerstva \cite{ref5}\cite{ref6}. Baš kao i neke druge industrije koje su tradicionalno ne-softverske, kao što su avionska, odbrambena ili raketna, i automobilska industrija biva pogođena softverskom revolucijom. Sve veći broj, kako kritičnih tako i ne kritičnih, funkcionalnosti automobila počinje da bude kontrolisano pomoću softvera. Stoga je razumevanje softvera koji se koriste u automobilskoj industriji sve važnije, i mnogo se više pažnje pridaje nego pre par decenija. Broj (eng. Broy) u \cite{ref6} opisuje softver u ovoj industriji na sledeći način:
 \bigbreak
