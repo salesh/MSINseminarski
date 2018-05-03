@@ -91,8 +91,6 @@ U ovom delu dajemo kratak pregled izazova koji se mogu sresti u verifikaciji sof
 \textit{alati za verifikaciju}: Nedostatak adekvatnih alata i tehnika za verifikaciju \cite{ref13}.
 \bigbreak
 \textit{testiranje i praćenje nedostataka}: Visoka cena popravljanja nedostataka kao i neotkrivenih nedostataka \cite{ref13}.
-\bigbreak
-\textit{dokumentacija}: Nedostatak odgovarajuće i ažurne dokumentacije \cite{ref13}. Preklapanje testova na različitim nivoima testiranja dovodi do gubitka vremena i resursa \cite{ref15}.
 
 \section{Efikasno testiranje u automobilskoj industriji}
 \label{sec:efikasno}
